@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    background: #000; 
+    color: #ff0000; 
+    font-family: 'Courier New', monospace; 
+    overflow-x: hidden; 
+}
+
+#portalCanvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: -1;
+}
+
+main { 
+    position: relative; 
+    z-index: 10; 
+    max-width: 500px; 
+    margin: 10vh auto; 
+    padding: 20px; 
+}
+
+.section { 
+    border: 1px solid rgba(255, 0, 0, 0.5); 
+    padding: 25px; 
+    margin-bottom: 30px; 
+    background: rgba(0, 0, 0, 0.85); 
+    backdrop-filter: blur(15px); /* Efeito de profundidade */
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.2), inset 0 0 15px rgba(255, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 { 
+    font-size: 2rem; 
+    text-shadow: 0 0 15px #ff0000; 
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.owner-btn {
+    display: block;
+    padding: 20px;
+    border: 2px solid #ff0000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: rgba(255, 0, 0, 0.2);
+    box-shadow: 0 0 20px #ff0000;
+    text-shadow: 0 0 8px #fff;
+    transition: 0.4s;
+}
+
+.owner-btn:hover {
+    background: #ff0000;
+    box-shadow: 0 0 50px #ff0000;
+    color: #000;
+}
